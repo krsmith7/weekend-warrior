@@ -20,7 +20,7 @@ class Hamming
       @distance = 0
     # If strands are not the same, compare the nucleotides of each strand together in order
     elsif strand_1 != strand_2
-
+      # For each strand difference, add 1 to the Hamming distance 
       strand_1.length.times do |i|
         if strand_1[i] != strand_2[i]
           @distance += 1
